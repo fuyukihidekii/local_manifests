@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="lineage_OS"
+        fetch="https://github.com/LineageOS/" />
+<remote name="fh"
+        fetch="https://github.com/fuyukihidekii/" />
+
+<!-- Device Tree -->
+<project path="device/motorola/nash" name="android_device_motorola_nash"
+         remote="fh" revision="snowcone" />
+
+<!-- Vendor Tree -->
+<project path="vendor/motorola" name="android_vendor_motorola_proprietary"
+         remote="fh" revision="snowcone" />
+        
+<!-- Kernel Tree -->
+<project path="kernel/motorola/msm8998" name="android_kernel_motorola_msm8998"
+         remote="fh" revision="snowcone" />
+
+<!-- Device Dependencies -->
+<project path="hardware/motorola" name="android_hardware_motorola"
+         revision="lineage-19.1" remote="lineage_OS" />
+
+<project path="system/qcom" name="android_system_qcom"
+         revision="lineage-19.1" remote="lineage_OS" />
+
+<project path="external/bson" name="android_external_bson"
+         revision="lineage-19.1" remote="lineage_OS" />
+
+</manifest>
