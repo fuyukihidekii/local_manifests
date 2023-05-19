@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="lineage_OS"
+        fetch="https://github.com/LineageOS/" />
+<remote name="fh"
+        fetch="https://github.com/fuyukihidekii/" />
+
+<!-- Device Tree -->
+<project path="device/motorola/river" name="android_device_motorola_river"
+         remote="fh" revision="tiramisu" />
+<!-- Common Device-Tree -->
+<project path="device/motorola/sdm632-common" name="device_motorola_sdm632-common"
+         remote="fh" revision="tiramisu" />
+<!-- Vendor Tree -->
+<project path="vendor/motorola" name="android_vendor_motorola_proprietary"
+         remote="fh" revision="tiramisu" />
+<!-- Kernel Tree -->
+<project path="kernel/motorola/sdm632" name="android_kernel_motorola_sdm632"
+         remote="fh" revision="tiramisu" />
+
+<!-- Device Dependencies -->
+<project path="hardware/motorola" name="LineageOS/android_hardware_motorola"
+         revision="lineage-20" remote="lineage_OS" />
+
+<project path="system/qcom" name="LineageOS/android_system_qcom"
+         revision="lineage-20" remote="lineage_OS" />
+
+<project path="external/bson" name="android_external_bson"
+         revision="lineage-20" remote="lineage_OS" />
+
+</manifest>
