@@ -20,10 +20,10 @@
          remote="fh" revision="tiramisu" />
 
 <!-- Device Dependencies -->
-<project path="hardware/motorola" name="LineageOS/android_hardware_motorola"
+<project path="hardware/motorola" name="android_hardware_motorola"
          revision="lineage-20" remote="lineage_OS" />
 
-<project path="system/qcom" name="LineageOS/android_system_qcom"
+<project path="system/qcom" name="android_system_qcom"
          revision="lineage-20" remote="lineage_OS" />
 
 <project path="external/bson" name="android_external_bson"
