@@ -23,5 +23,5 @@
 
 			<!-- Device Dependencies -->
 		<project path="hardware/samsung" name="android_hardware_samsung"
-			revision="lineage-20" remote="lineage_OS" />
+			revision="lineage-20" remote="Lineage_OS" />
 	</manifest>
