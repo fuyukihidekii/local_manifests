@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-<remote name="fh"
-        fetch="https://github.com/fuyukihidekii/" />
+	<manifest>
+		<remote name="Lineage_OS"
+			fetch="https://github.com/lineageos/" />
+		<remote name="fh"
+			fetch="https://github.com/fuyukihidekii/" />
 
-<!-- Device Tree -->
-<project path="device/samsung/a71" name="android_device_samsung_a71"
-         remote="fh" revision="tiramisu" />
-<!-- Common Device-Tree -->
-<project path="device/samsung/sm6150-common" name="android_device_samsung_sm6150-common"
-         remote="fh" revision="tiramisu" />
-<!-- Vendor Tree -->
-<project path="vendor/samsung" name="android_vendor_samsung_proprietary"
-         remote="fh" revision="tiramisu" />
-<!-- Kernel Tree -->
-<project path="kernel/samsung/sm6150" name="android_kernel_samsung_sm6150"
-         remote="fh" revision="tiramisu" />
-</manifest>
+			<!-- Device Tree -->
+		<project path="device/samsung/a71" name="android_device_samsung_a71"
+			remote="fh" revision="tiramisu" />
+
+			<!-- Common Device-Tree -->
+		<project path="device/samsung/sm6150-common" name="android_device_samsung_sm6150-common"
+			remote="fh" revision="tiramisu" />
+
+			<!-- Vendor Tree -->
+		<project path="vendor/samsung" name="android_vendor_samsung_proprietary"
+			remote="fh" revision="tiramisu" />
+
+			<!-- Kernel Tree -->
+		<project path="kernel/samsung/sm6150" name="android_kernel_samsung_sm6150"
+			remote="fh" revision="tiramisu" />
+
+			<!-- Device Dependencies -->
+		<project path="hardware/samsung" name="android_hardware_samsung"
+			revision="lineage-20" remote="lineage_OS" />
+	</manifest>
