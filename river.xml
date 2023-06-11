@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
+	<manifest>
+		<remote name="Lineage_OS"
+			fetch="https://github.com/lineageos/" />
+		<remote name="fh"
+			fetch="https://github.com/fuyukihidekii/" />
 
-<remote name="lineage_OS"
-        fetch="https://github.com/LineageOS/" />
-<remote name="fh"
-        fetch="https://github.com/fuyukihidekii/" />
+			<!-- Device Tree -->
+		<project path="device/motorola/river" name="device_motorola_river"
+			remote="fh" revision="vk_banana_13" />
 
-<!-- Device Tree -->
-<project path="device/motorola/river" name="android_device_motorola_river"
-         remote="fh" revision="tiramisu" />
-<!-- Common Device-Tree -->
-<project path="device/motorola/sdm632-common" name="android_device_motorola_sdm632-common"
-         remote="fh" revision="tiramisu" />
-<!-- Vendor Tree -->
-<project path="vendor/motorola" name="android_vendor_motorola_proprietary"
-         remote="fh" revision="tiramisu" />
-<!-- Kernel Tree -->
-<project path="kernel/motorola/sdm632" name="android_kernel_motorola_sdm632"
-         remote="fh" revision="tiramisu" />
+			<!-- Common Device Tree -->
+		<project path="device/motorola/sdm632-common" name="device_motorola_sdm632-common"
+			remote="fh" revision="vk_banana_13" />
 
-<!-- Device Dependencies -->
-<project path="hardware/motorola" name="android_hardware_motorola"
-         revision="lineage-20" remote="lineage_OS" />
+			<!-- Vendor Tree -->
+		<project path="vendor/motorola/river" name="vendor_motorola_river"
+			remote="fh" revision="vk_banana_13" />
 
-<project path="system/qcom" name="android_system_qcom"
-         revision="lineage-20" remote="lineage_OS" />
+			<!-- Common Vendor Tree -->
+		<project path="vendor/motorola/sdm632-common" name="vendor_motorola_sdm632-common"
+			remote="fh" revision="vk_banana_13" />
 
-<project path="external/bson" name="android_external_bson"
-         revision="lineage-20" remote="lineage_OS" />
+			<!-- Common Kernel Tree -->
+		<project path="kernel/motorola/sdm632" name="kernel_motorola_sdm632"
+			remote="fh" revision="vk_banana_13" />
 
-</manifest>
+			<!-- Device Dependencies -->
+		<project path="hardware/motorola" name="android_hardware_motorola"
+			revision="lineage-20" remote="Lineage_OS" />
+
+		<project path="system/qcom" name="android_system_qcom"
+			revision="lineage-20" remote="Lineage_OS" />
+
+		<project path="external/bson" name="android_external_bson"
+			revision="lineage-20" remote="Lineage_OS" />
+	</manifest>
