@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	
+	<!-- Hideki's GitHub -->
+	<remote name="fh"
+	fetch="https://github.com/fuyukihidekii/" />
+
+	<!-- motorola-hanoip -->
+	<!-- Device configuration -->
+	<project path="device/motorola/hanoip" name="android_device_motorola_hanoip"
+	remote="fh" revision="lineage-dev" />
+	<!-- Proprietary vendor files -->
+	<project path="vendor/motorola/hanoip" name="proprietary_vendor_motorola_hanoip"
+	remote="fh" revision="lineage-dev" />
+
+	<!-- Dependencies for SM6150-based platforms -->
+	<!-- Common device configuration -->
+	<project path="device/motorola/sm6150-common" name="android_device_motorola_sm6150-common"
+	remote="fh" revision="lineage-dev" />
+	<!-- Common proprietary files -->
+	<project path="vendor/motorola/sm6150-common" name="android_vendor_motorola_sm6150-common"
+	remote="fh" revision="lineage-dev" />
+	<!-- Common Android Linux 4.14 Kernel -->
+	<project path="kernel/motorola/sm6150" name="android_kernel_motorola_sm6150"
+	remote="fh" revision="lineage-dev" />
+
+</manifest>
